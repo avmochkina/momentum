@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="css/owfont-regular.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@200;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Momentum</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="player">
+                <div class="title">Ludovico Einaudi Experience</div>
+                <div class="controls" >
+                    <div class="duration">
+                        <div class="current">0:00</div>
+                        <div class="divider">/</div>
+                        <div class="total">0:00</div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="volume-container">
+                        <div class="volume-button">
+                            <div class="volume icono-volumeMedium"></div>
+                        </div>
+                        
+                        <div class="volume-slider">
+                            <div class="volume-percentage"></div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="player-buttons">
+                    <div class="play-prev player-icon_small">
+                        <img  src="./assets/icons/previous.svg">
+                    </div>
+                    <div class="play player-icon_big">
+                        <img class="play-pause" src="./assets/icons/play.svg">
+                    </div>
+                    <div class="play-next player-icon_small">
+                        <img  src="./assets/icons/next.svg">
+                    </div>
+                </div>
+                <audio class="audio" src="./assets/sounds/Ludovico Einaudi Experience.mp3"></audio>
+                <ul class="playlist">
+                    <li class="song">Ludovico Einaudi Experience</li>    
+                    <li class="song">Ludovico Einaudi Night</li>    
+                    <li class="song">Ludovico Einaudi Primavera</li>    
+                    <li class="song">Ludovico Einaudi Una Mattina</li>    
+                    <li class="song">Ludovico Einaudi Walk</li> 
+                </ul>      
+            </div>
+            <div class="weather">
+                <input type="text" class="city" />
+                <div class="weather-error"></div>
+                <div class="description-container">
+                    <div class="weather-icon owf"></div>
+                    <div class="temperature-description">
+                        <div class="temperature"></div>
+                        <div class="weather-description"></div>
+                    </div>
+                </div>
+                <div class="weather-error"></div>  
+                <div class="wind"></div>
+                <div class="humidity"></div>
+            </div>
+        </header>
+        <main class="main">  
+            <button class="slide-prev slider-icon"></button>
+            <div class="main-content">
+                <time class="time"></time>
+                <date class="date"></date>
+                <div class="greeting-container">
+                    <span class="greeting"></span>
+                    <input type="text" class="name" placeholder="Enter your name"/>
+                </div>
+            </div> 
+            <button class="slide-next slider-icon"></button>
+        </main>
+        <footer class="footer">
+            <div class="quote">
+                <button class="change-quote"></button>    
+                <div class="quote-text"></div>
+                <div class="author"></div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-mylink">
+                    <a href="https://github.com/avmochkina" class="footer-mylink-github" target="_blank">
+                        <p class="footer-link-text"> my GitHub</p> 
+                    </a>
+                </div>
+                <div class="footer-rslink">
+                    <p class="footer-link-text">Made with love to</p>
+                    <a href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/momentum/momentum-stage1.md" class="footer-rslink-school" target="_blank">
+                        <img src="./assets/img/RS-logo-white.svg" alt="RS school logo" >
+                    </a>
+                    <p>2022</p>
+                </div>
+              </div>
+            
+        </footer>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
